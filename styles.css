@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Formulario de ingreso de datos */
+  .form-container {
+    flex: 1 0 400px; /* Ajustar tamaño mínimo y máximo */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-container label,
+  .form-container input,
+  .form-container button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Planilla estilo Excel */
+  .planilla {
+    flex: 1 0 400px; /* Ajustar tamaño mínimo y máximo */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .planilla table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .planilla th,
+  .planilla td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .planilla th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Total general */
+  .total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .form-container,
+    .planilla {
+      flex-basis: 100%; /* Ocupar el 100% del ancho en dispositivos móviles */
+    }
+  }
+  
